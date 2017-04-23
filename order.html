@@ -17,7 +17,7 @@
 <!-- Compiled and minified JavaScript -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
 
-  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/order-style.css">
 
 
   </script>
@@ -49,80 +49,81 @@
 
 <!-- CONTENTS =========================== -->
 
-<div class='container'>
-  <div class="row">
+<div class='container'> <!-- ITEM / ORDER CONTAINER-->
+  <div class="row"> <!-- ITEM / ORDER ROW -->
 
+<div class="container col s12 m8" id='item-cards'> <!-- LEFT SIDE CONTAINER -->
     <!-- CARD ONE -->
-    <div class="col s12 m3">
-      <div class="card small">
+    <div class="col s12 m6">
+      <div class="card medium hoverable">
         <div class="card-image">
-          <img src="images/sample-1.jpg">
-          <span class="card-title">Card Title</span>
+          <img src="./img/batman-punch2.jpg">
+          <!-- <span class="card-title">Knuckle Sandwich</span> -->
         </div>
         <div class="card-content">
-          <p>I am a very simple card. I am good at containing small bits of information.
-          I am convenient because I require little markup to use effectively.</p>
+          <h5><strong>Knuckle Sandwich</strong></h5>
+          <p>A delightful pairing of Batman's fist and recipient's face.</p>
         </div>
         <div class="card-action">
-          <a href="#">This is a link</a>
+          <a href="#">Order Now</a>
         </div>
       </div>
     </div>
 
     <!-- CARD TWO -->
-    <div class="col s12 m3">
-      <div class="card small">
+    <div class="col s12 m6">
+      <div class="card medium hoverable">
         <div class="card-image">
-          <img src="images/sample-1.jpg">
-          <span class="card-title">Card Title</span>
+          <img src="img/batman-kick.jpg">
+          <!-- <span class="card-title">Card Title</span> -->
         </div>
         <div class="card-content">
-          <p>I am a very simple card. I am good at containing small bits of information.
-          I am convenient because I require little markup to use effectively.</p>
+          <h5><strong>Kickin' Chicken</strong></h5>
+          <p>$10.00</p>
         </div>
         <div class="card-action">
-          <a href="#">This is a link</a>
+          <a href="#">Order Now</a>
         </div>
       </div>
     </div>
 
     <!-- CARD THREE -->
-    <div class="col s12 m3">
-      <div class="card small">
+    <div class="col s12 m6">
+      <div class="card medium hoverable">
         <div class="card-image">
-          <img src="images/sample-1.jpg">
-          <span class="card-title">Card Title</span>
+          <img src="img/batman-slap.jpg">
+          <!-- <span class="card-title">Card Title</span> -->
         </div>
         <div class="card-content">
-          <p>I am a very simple card. I am good at containing small bits of information.
-          I am convenient because I require little markup to use effectively.</p>
+          <h5><strong>Slap Happy Meal</strong></h5>
+          <p>$5.99</p>
         </div>
         <div class="card-action">
-          <a href="#">This is a link</a>
+          <a href="#">Order Now</a>
         </div>
       </div>
     </div>
 
     <!-- CARD FOUR -->
-    <div class="col s12 m3">
-      <div class="card small">
+    <div class="col s12 m6">
+      <div class="card medium hoverable">
         <div class="card-image">
-          <img src="images/sample-1.jpg">
-          <span class="card-title">Card Title</span>
+          <img src="img/bat-swarm.png">
+          <!-- <span class="card-title">Card Title</span> -->
         </div>
         <div class="card-content">
-          <p>I am a very simple card. I am good at containing small bits of information.
-          I am convenient because I require little markup to use effectively.</p>
+          <h5><strong>Guano Bowl</strong></h5>
+          <p>$13.99</p>
         </div>
         <div class="card-action">
-          <a href="#">This is a link</a>
+          <a href="#">Order Now</a>
         </div>
       </div>
     </div>
 
     <!-- CARD FIVE -->
-    <div class="col s12 m3">
-      <div class="card small">
+    <div class="col s12 m6">
+      <div class="card medium hoverable">
         <div class="card-image">
           <img src="images/sample-1.jpg">
           <span class="card-title">Card Title</span>
@@ -132,14 +133,14 @@
           I am convenient because I require little markup to use effectively.</p>
         </div>
         <div class="card-action">
-          <a href="#">This is a link</a>
+          <a href="#">Order Now</a>
         </div>
       </div>
     </div>
 
     <!-- CARD SIX -->
-    <div class="col s12 m3">
-      <div class="card small">
+    <div class="col s12 m6">
+      <div class="card medium hoverable">
         <div class="card-image">
           <img src="images/sample-1.jpg">
           <span class="card-title">Card Title</span>
@@ -149,38 +150,44 @@
           I am convenient because I require little markup to use effectively.</p>
         </div>
         <div class="card-action">
-          <a href="#">This is a link</a>
+          <a href="#">Order Now</a>
         </div>
       </div>
     </div>
 
+</div> <!-- CLOSE LEFT SIDE CONTAINER -->
+
+<div class="container col s12 m4"> <!-- RIGHT SIDE CONTAINER -->
+
     <!-- SIDE TABLE -->
-    <table class='striped right col s12 m3'>
+    <table class='striped right col s12 m12'>
       <thead>
         <tr>
             <th>Name</th>
-            <th>Item Name</th>
+            <th class='right'>Item Name</th>
         </tr>
       </thead>
 
       <tbody>
         <tr>
           <td>Eclair</td>
-          <td>$0.87</td>
+          <td class='right'>$0.87</td>
         </tr>
         <tr>
           <td>Jellybean</td>
-          <td>$3.76</td>
+          <td class='right'>$3.76</td>
         </tr>
         <tr>
           <td>Lollipop</td>
-          <td>$7.00</td>
+          <td class='right'>$7.00</td>
         </tr>
       </tbody>
     </table>
 
-  </div> <!-- END OF ROW -->
-</div> <!-- END OF CONTAINER -->
+</div> <!-- CLOSE RIGHT SIDE CONTAINER -->
+
+  </div> <!-- END OF ITEM / ORDERL ROW -->
+</div> <!-- END OF ITEM / ORDER CONTAINER -->
 
 
 

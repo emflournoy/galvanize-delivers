@@ -42,17 +42,22 @@
        <ul id="nav-mobile" class="right hide-on-med-and-down">
          <li><a href="order.html">ORDER</a></li>
        </ul>
-     </div> -->
+     </div>
   </nav>
 
 
 
 <!-- CONTENTS =========================== -->
 
+<div class='container center'> <!-- TOP CONTAINER-->
+  <h2>Place your order now!</h2>
+</div> <!-- CLOSE TOP CONTAINER-->
+
+
 <div class='container'> <!-- ITEM / ORDER CONTAINER-->
   <div class="row"> <!-- ITEM / ORDER ROW -->
 
-<div class="container col s12 m8" id='item-cards'> <!-- LEFT SIDE CONTAINER -->
+<div class="container col s12 m8" id='deck'> <!-- LEFT SIDE CONTAINER -->
     <!-- CARD ONE -->
     <div class="col s12 m6">
       <div class="card medium hoverable">
@@ -62,7 +67,8 @@
         </div>
         <div class="card-content">
           <h5><strong>Knuckle Sandwich</strong></h5>
-          <p>A delightful pairing of Batman's fist and recipient's face.</p>
+          <p>$9.99
+          <!-- <p>A delightful pairing of Batman's fist and recipient's face.</p> -->
         </div>
         <div class="card-action">
           <a href="#">Order Now</a>
@@ -79,7 +85,7 @@
         </div>
         <div class="card-content">
           <h5><strong>Kickin' Chicken</strong></h5>
-          <p>$10.00</p>
+          <p>$11.99</p>
         </div>
         <div class="card-action">
           <a href="#">Order Now</a>
@@ -121,68 +127,81 @@
       </div>
     </div>
 
-    <!-- CARD FIVE -->
-    <div class="col s12 m6">
-      <div class="card medium hoverable">
-        <div class="card-image">
-          <img src="images/sample-1.jpg">
-          <span class="card-title">Card Title</span>
-        </div>
-        <div class="card-content">
-          <p>I am a very simple card. I am good at containing small bits of information.
-          I am convenient because I require little markup to use effectively.</p>
-        </div>
-        <div class="card-action">
-          <a href="#">Order Now</a>
-        </div>
-      </div>
-    </div>
-
-    <!-- CARD SIX -->
-    <div class="col s12 m6">
-      <div class="card medium hoverable">
-        <div class="card-image">
-          <img src="images/sample-1.jpg">
-          <span class="card-title">Card Title</span>
-        </div>
-        <div class="card-content">
-          <p>I am a very simple card. I am good at containing small bits of information.
-          I am convenient because I require little markup to use effectively.</p>
-        </div>
-        <div class="card-action">
-          <a href="#">Order Now</a>
-        </div>
-      </div>
-    </div>
 
 </div> <!-- CLOSE LEFT SIDE CONTAINER -->
 
 <div class="container col s12 m4"> <!-- RIGHT SIDE CONTAINER -->
 
-    <!-- SIDE TABLE -->
-    <table class='striped right col s12 m12'>
+    <!-- ITEMS TABLE -->
+    <table class='striped right col s12 m12 grey lighten-2' id='cart'>
       <thead>
         <tr>
             <th>Name</th>
-            <th class='right'>Item Name</th>
+            <th class='right'>Price</th>
         </tr>
       </thead>
 
       <tbody>
+
+      </tbody>
+    </table>
+
+    <!-- TOTAL TABLE -->
+    <table class='right col s12 m7' id='total'>
+      <tbody>
         <tr>
-          <td>Eclair</td>
-          <td class='right'>$0.87</td>
+          <td>Subtotal</td>
+          <td class='right' id='subtotalAmt'>$0.00</td>
         </tr>
         <tr>
-          <td>Jellybean</td>
-          <td class='right'>$3.76</td>
+          <td>Tax</td>
+          <td class='right' id='taxAmt'>$0.00</td>
         </tr>
         <tr>
-          <td>Lollipop</td>
-          <td class='right'>$7.00</td>
+          <td>Total</td>
+          <td class='right' id='totalAmt'>$0.00</td>
         </tr>
       </tbody>
     </table>
+
+    <!-- INFO FORM -->
+    <div class="row">
+      <form class="col s12">
+
+        <div class="row">
+          <div class="input-field col s6">
+            <input id="first_name" type="text" class="validate">
+            <label for="first_name">First Name</label>
+          </div>
+          <div class="input-field col s6">
+            <input id="last_name" type="text" class="validate">
+            <label for="last_name">Last Name</label>
+          </div>
+        </div>
+
+        <!-- <div class="row"
+          <div class="input-field col s12">
+            <input id="telephone" type="tel" class="validate">
+            <label for="telephone">Telephone</label>
+          </div>
+        </div> -->
+
+        <div class="row">
+           <div class="input-field col s12">
+             <input id="email" type="email" class="validate">
+             <label for="email" data-error="wrong" data-success="right">Email</label>
+           </div>
+        </div>
+
+        </div>
+      </form>
+    </div>
+
+    <!-- SUBMIT BUTTON -->
+    <button class="btn waves-effect waves-light" type="submit" name="action">PLACE ORDER
+    </button>
+
+
 
 </div> <!-- CLOSE RIGHT SIDE CONTAINER -->
 
@@ -219,7 +238,7 @@
 
 <!-- JS and Jquery link -->
 
-  <script type="text/javascript" src="./js/index.js"></script>
+  <script type="text/javascript" src="./js/order.js"></script>
     </body>
 
 </html>

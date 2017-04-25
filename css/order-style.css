@@ -1,8 +1,16 @@
-#main-nav-logo {
-  width: 13%;
-  padding: 1%;
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One|Rock+Salt|Titillium+Web');
+/*font-family: 'Fjalla One', sans-serif   PARAGRAPH;
+font-family: 'Titillium Web', sans-serif   TITLE;
+font-family: 'Rock Salt', cursive;   LOGO*/
+
+
+body {
+  font-family: 'Fjalla One', sans-serif;
 }
 
+p {
+  font-family: 'Titillium Web', sans-serif
+}
 
 #hero-image-container {
     position: absolute;
@@ -19,8 +27,6 @@
     margin-left: auto;
 }
 
-
-
 .all-cards{
   width: 100%;
   height: auto;
@@ -30,8 +36,6 @@
 #item-cards p{
   text-align:
 }
-
-
 
 .footer{
   display: flex;
@@ -51,50 +55,80 @@ main {
 }
 
 
+.waves-effect.waves-blue .waves-ripple {
+ /* The alpha value allows the text and background color
+ of the button to still show through. */
+  background-color: rgba(20, 26, 119, 0.65);
+}
+
+
+
+
 /*INFO FORM*/
     /* label color */
      .input-field label {
        color: #ffd600;
      }
-     /* label focus color */
+ /* label focus color */
      .input-field input[type=text]:focus + label {
        color: #ffea00;
      }
-     /* label focus color */
      .input-field input[type=email]:focus + label {
        color: #ffea00;
      }
-     /* label underline color */
+     .input-field input[type=tel]:focus + label {
+       color: #ffea00;
+     }
+
+ /* label underline color */
      .input-field input[type=text] {
        border-bottom: 1px solid #ffd600;
        box-shadow: 0 1px 0 0 #ffd600;
      }
-     /* label underline color */
      .input-field input[type=email] {
        border-bottom: 1px solid #ffd600;
        box-shadow: 0 1px 0 0 #ffd600;
      }
-     /* label underline focus color */
+     .input-field input[type=tel] {
+       border-bottom: 1px solid #ffd600;
+       box-shadow: 0 1px 0 0 #ffd600;
+     }
+
+ /* label underline focus color */
      .input-field input[type=text]:focus {
        border-bottom: 1px solid #000;
        box-shadow: 0 1px 0 0 #000;
      }
-     /* label underline focus color */
      .input-field input[type=email]:focus {
        border-bottom: 1px solid #000;
        box-shadow: 0 1px 0 0 #000;
      }
-     /* valid color */
+     .input-field input[type=tel]:focus {
+       border-bottom: 1px solid #000;
+       box-shadow: 0 1px 0 0 #000;
+     }
+
+ /* valid color */
      .input-field input[type=text].valid {
        border-bottom: 1px solid #000;
        box-shadow: 0 1px 0 0 #000;
      }
-     /* invalid color */
+     .input-field input[type=email].valid {
+       border-bottom: 1px solid #000;
+       box-shadow: 0 1px 0 0 #000;
+     }
+     .input-field input[type=tel].valid {
+       border-bottom: 1px solid #000;
+       box-shadow: 0 1px 0 0 #000;
+     }
+
+ /* invalid color */
      .input-field input[type=text].invalid {
        border-bottom: 1px solid #000;
        box-shadow: 0 1px 0 0 #000;
      }
-     /* icon prefix focus color */
+
+ /* icon prefix focus color */
      .input-field .prefix.active {
        color: #000;
      }

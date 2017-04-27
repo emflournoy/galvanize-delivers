@@ -27,8 +27,9 @@ for(let i = 0; i<$deck.length; i++){
     var $row = $('<tr>');
     var $itemCell = $('<td>').text($itemName);
     var $priceCell = $('<td>').text($itemPrice);
-    $priceCell.css('text-align : center');
-    $row.append($itemCell, $itemPrice);
+    $priceCell.addClass('right');
+    $row.append($itemCell);
+    $row.append($priceCell);
     $cartBody.append($row);
 
     // update subtotals
